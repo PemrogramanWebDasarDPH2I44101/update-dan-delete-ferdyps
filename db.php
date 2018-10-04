@@ -1,13 +1,12 @@
 <?php
-$servername = "localhost";
-$username   = "admin";
-$password   = "1234";
-$db         = "WebDasar";
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $db = "webdasar";
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $db);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+    $conn = mysqli_connect($servername, $username, $password, $db);
+
+    if (!$conn) {
+        die("Connection failed: ".mysqli_connect_error());
+    }
 ?>
